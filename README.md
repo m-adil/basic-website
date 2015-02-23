@@ -43,4 +43,3 @@ Basic Website
 >`my-computer:project-base my-user$ gulp`
 
 #### Start coding!
-
