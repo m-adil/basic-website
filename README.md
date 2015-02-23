@@ -6,7 +6,7 @@ Basic Website
 * [Bootstrap v3.3.2](http://getbootstrap.com/),
 * [node.js](http://nodejs.org/),
 * [npm](https://www.npmjs.com/),
-* [gulp](http://gulpjs.com/),
+* [gulp](http://gulpjs.com/)
 
 ###### includes:
 **Source** and **Build**
