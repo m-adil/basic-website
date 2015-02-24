@@ -56,7 +56,7 @@ var paths = {
     }
   },
   bootscript: {
-    srcDir: basePaths.src + 'js/bootstrap/*.js',
+    srcDir: basePaths.src + 'js/bootstrap/',
     destDir: basePaths.dest + 'js/',
     destFile: {
       main: basePaths.dest + 'js/bootstrap.min.js'
@@ -128,7 +128,20 @@ gulp.task('script', function () {
 
 // Task Uglify => gulp bootstrap
 gulp.task('bootstrap', function () {
-  gulp.src(paths.bootscript.srcDir)
+  gulp.src([
+          paths.bootscript.srcDir + 'transition.js',
+          paths.bootscript.srcDir + 'alert.js',
+          paths.bootscript.srcDir + 'button.js',
+          paths.bootscript.srcDir + 'carousel.js',
+          paths.bootscript.srcDir + 'collapse.js',
+          paths.bootscript.srcDir + 'dropdown.js',
+          paths.bootscript.srcDir + 'modal.js',
+          paths.bootscript.srcDir + 'tooltip.js',
+          paths.bootscript.srcDir + 'popover.js',
+          paths.bootscript.srcDir + 'scrollspy.js',
+          paths.bootscript.srcDir + 'tab.js',
+          paths.bootscript.srcDir + 'affix.js'
+        ])
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(changed(paths.js.destDir))
     .pipe(concat('bootstrap.js'))
