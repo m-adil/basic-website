@@ -36,15 +36,18 @@ var gulp       = require('gulp'),
     //gzip       = require('gulp-gzip'),
     livereload = require('gulp-livereload');
 
+// Start Liveroad
+// Download and install Chrome extension !!!
+livereload({ start: true })
+
 // gzip_options
 /*var gzip_options = {
   threshold: '1kb',
   gzipOptions: {
     level: 9
   }
-};
-*/
-livereload({ start: true })
+};*/
+
 
 // Define paths
 var basePaths = {
