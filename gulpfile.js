@@ -32,7 +32,19 @@ var gulp       = require('gulp'),
     // sourcemaps = require('gulp-sourcemaps'),
     notify     = require('gulp-notify')
     plumber    = require('gulp-plumber'),
-    changed    = require('gulp-changed');
+    changed    = require('gulp-changed'),
+    //gzip       = require('gulp-gzip'),
+    livereload = require('gulp-livereload');
+
+// gzip_options
+/*var gzip_options = {
+  threshold: '1kb',
+  gzipOptions: {
+    level: 9
+  }
+};
+*/
+livereload({ start: true })
 
 // Define paths
 var basePaths = {
@@ -109,7 +121,9 @@ gulp.task('style', function () {
     .pipe(minify())
     .pipe(header(banner, { pkg:pkg, year:year } ))
     .pipe(rename('app-front.min.css'))
+    //.pipe(gzip(gzip_options))
     .pipe(gulp.dest(paths.css.destFile))
+    .pipe(livereload());
 });
 
 // Task Uglify => gulp script
@@ -183,6 +197,8 @@ gulp.task('script-banner', function() {
 /* ========================================================================== */
 
 gulp.task('watcher', function() {
+  livereload.listen();
+
   var watcherScript = gulp.watch(paths.js.srcDir, ['script']);
   watcherScript.on('change', function (event) {
     console.log('Event type: ' + event.type);
