@@ -20,38 +20,42 @@ This starter project
 * Distinct **Source** and **Build** folders
 * Gulp Dependencies:
 
-```shell
-gulp
-gulp-changed
-gulp-concat
-gulp-csslint
-gulp-header
-gulp-imagemin
-gulp-jshint
-gulp-less
-gulp-minify-css
-gulp-notify
-gulp-plumber
-gulp-rename
-gulp-sourcemaps
-gulp-uglify
-gulp-util
-gulp-watch
-```
+	```shell
+	gulp
+	gulp-changed
+	gulp-concat
+	gulp-csslint
+	gulp-header
+	gulp-imagemin
+	gulp-jshint
+	gulp-less
+	gulp-minify-css
+	gulp-notify
+	gulp-plumber
+	gulp-rename
+	gulp-sourcemaps
+	gulp-uglify
+	gulp-util
+	gulp-watch
+	```
 
 How To
 ------
 
 1. Install [node.js](http://nodejs.org/) and [npm](https://www.npmjs.com/)
 2. Open a **terminal** to install Gulp dependencies
-```shell
-$ cd /my_path_to_my_user/and_my_workspace/basic-website
-$ [sudo] npm install
-```
+
+	```shell
+	$ cd /my_path_to_my_user/and_my_workspace/basic-website
+	$ [sudo] npm install
+	```
+
 3. Launch the tasks
-```shell
-$ gulp
-```
+
+	```shell
+	$ gulp
+	```
+
 4. Do whatever else !
 
 Todo
