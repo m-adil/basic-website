@@ -7,3 +7,5 @@
 
 node_modules/
 documents/
+
+npm-debug.log
