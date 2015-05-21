@@ -14,7 +14,11 @@
     "url": "https://github.com/samcome/basic-website.git"
   },
   "keywords": [
-    ""
+    "website",
+    "starter",
+    "boilerplate",
+    "bootstrap",
+    "gulp"
   ],
   "author": {
     "name": "S.Frémondière & J.Bachelier",
