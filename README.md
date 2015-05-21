@@ -3,7 +3,7 @@ Basic Website
 ####This page use :
 ---
 * [HTML5 Boilerplate v5.0.0](https://html5boilerplate.com/),
-* [Bootstrap v3.3.2](http://getbootstrap.com/),
+* [Bootstrap v3.3.4](http://getbootstrap.com/),
 * [node.js](http://nodejs.org/),
 * [npm](https://www.npmjs.com/),
 * [gulp](http://gulpjs.com/)
